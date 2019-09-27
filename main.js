@@ -1,25 +1,41 @@
-function capitalize() {
+function capitalize(str) {
+  return str.toUpperCase();
 }
 
-function exclaim() {
+function exclaim(str) {
+  return str + '!';
 }
 
-function firstCharacter() {
+function firstCharacter(Colin) {
+  return Colin[0];
 }
 
-function lastCharacter() {
+function lastCharacter(Colin) {
+  return Colin[Colin.length - 1]
 }
 
-function oneCharacter() {
+function oneCharacter(hello, bye) {
+  return hello[bye];
 }
 
-function twoCharacters() {
+function twoCharacters(brkfst, lnch, dnr) {
+  
+  return brkfst[lnch] + brkfst[dnr];
+
 }
 
-function initials() {
+function initials(str) {
+  const spaceIndex = firstCharacter(str);
+  const spaceIndex = str.indexOf(' ');
+  const secondInitial = str[spaceIndex + 1]
+  return firstInitial + '.' + secondInitial + '.';
+
+  // let index = str.indexOf
+  // return firstCharacter(str) +
 }
 
-function yeller() {
+function yeller(str) {
+  return capitalize(exclaim(exclaim(exclaim(str))));
 }
 
 
